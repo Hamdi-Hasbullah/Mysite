@@ -1,0 +1,9 @@
+/* website theme variable */
+:root {
+    --bgcolor: #ffd700;
+}
+
+
+body {
+    background-color: var(--bgcolor);
+}
