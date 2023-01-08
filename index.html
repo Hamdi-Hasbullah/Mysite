@@ -4,39 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamdi | front-end</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
+    <link rel="icon" href="./images/Home.ico">
 </head>
+    <style> 
 
+    </style>
 <body>
+    <div class="animated-load">
+        <span class="bluering" width="100px" height="100px"></span>
+    </div>
     <nav>
-        <span class="logo"><a href="./index.html">Hamdi.</a></span>
+        <span class="logo"><a id="logo" href="./index.html">Hamdi.</a></span>
         <ul>
-            <li class="navigate"><a href="#">Experience</a></li>
-            <li class="navigate"><a href="#">Project</a></li>
-            <li class="navigate"><a href="#">Education</a></li>
-            <li class="navigate"><a href="#">Home</a></li>
+            <li class="navigate"><a href="experience.html">Experience</a></li>
+            <li class="navigate"><a href="education.html">Education</a></li>
+            <li class="navigate"><a href="biodata.html">Biodata</a></li>
+            <li class="navigate"><a href="#" id="active">Home</a></li>
         </ul>
     </nav>
 
     <div class="header">
         <div class="intro-container">
-            <h1>Hi everyone <span class="emote">👋</span></h1>
-            <p class="intro">My name is <span>Hamdi Surbakti</span></p>
-            <p class="intro">Front-End Dev junior</p>
-            <p class="intro"><a class="aboutme" href="#header2">About me</a></pc>
+            <p>Hi everyone <span class="emote">👋</span></p>
+            <p class="intro">My name is <span class="tag">Hamdi</span></p>
+            <p class="intro">Front-End Web Developer Jr.</p>
+            <p class="intro"><a class="started" href="#firstSection">Started</a></pc>
+        </div>
+        <div class="clock">
+            <canvas id="canvas" width="300" height="300"
+            style="background-color:rgba(51, 51, 51, 0)">
+            </canvas>
         </div>
     </div>
 
-    <div class="section">
+    <div id="firstSection" class="section">
         <div class="section-Box">
-            <h2 id="header2">ABOUT ME</h2>
+            <h2>INTRODUCTION</h2>
             <span class="underline"></span>
+            <div class="sub-section">
+                <div class="photo"></div>
+                <div class="article">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nulla perferendis consequatur earum dicta dolor 
+                        corporis vero, voluptatibus veniam quaerat, odio amet, ratione animi sequi. Aliquid, 
+                        dolorum quas eius dolores ut possimus fugit? Amet quidem ipsa architecto. Sed, ea temporibus. 
+                        Vitae rerum natus asperiores similique, doloribus eum assumenda recusandae? Reprehenderit?
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    
+    <div class="coverPage" style="overflow-x: auto;">
+        <table class="data-page">
+            <tr class="data-row">
+                <th class="data-heading">Name</th>
+                <td class="data">Hamdi Hasbullah Nasaruddin</td>
+            </tr>
+            <tr class="data-row">
+                <th class="data-heading">Class</th>
+                <td class="data">N5IM1105C</td>
+            </tr>
+            <tr class="data-row">
+                <th class="data-heading">Faculty</th>
+                <td class="data">College computers, informatic and media</td>
+            </tr>
+            <tr class="data-row">
+                <th class="data-heading">Course</th>
+                <td class="data">IMD311 Introduction to web content</td>
+            </tr>
+            <tr class="data-row">
+                <th class="data-heading">Prepared for</th>
+                <td class="data">Madam Seri Intan Idayu Binti Shahrul Asari</td>
+            </tr>
+        </table>
+
+    </div>
+    <hr>
+
+
+
+    <footer>
+        <div class="socialLink">
+            <a href="http://t.me/KrillinRumble" target="_blank"><abbr title="Telegram">
+                <img src="./images/telegram.png" alt="Telegram">
+            </abbr></a>
+        </div>
+        <div class="socialLink">
+            <a href="mailto: hamdihasbullah2@gmail.com"><abbr title="Gmail"><img src="./images/email.png" 
+                alt="gmail"></abbr></a>
+        </div>
+        <div class="socialLink">
+            <a href="https://github.com/Hamdi-Hasbullah" target="_blank"><abbr title="Github">
+            <img src="./images/github.png" alt="github"></abbr></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./asset/script.js"></script>
 </body>
 </html>
