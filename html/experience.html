@@ -11,11 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
     <link rel="icon" href="../images/experience.ico">
 </head>
+    <style>
+        .card-container {
+            width: 100%;
+            height: fit-content;
+            position: relative;
+            top: 150px;
+        }
+
+        .card-box {
+            width: 90%;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .card {
+            width:250px;
+            height: 400px;
+            margin: 10px;
+            border: 1px solid white;
+        }
+
+
+    </style>
 <body>
-    <div class="animated-load">
+    <!-- <div class="animated-load">
         <span class="bluering" width="100px" height="100px"></span>
-    </div>
-    
+    </div>-->
     <nav>
         <span class="logo"><a href="../index.html">Hamdi.</a></span>
         <ul>
@@ -25,5 +52,30 @@
             <li class="navigate"><a href="../index.html">Home</a></li>
         </ul>
     </nav>
+
+    <header>
+        <h1 align="center">SKILLS</h1>
+        <div class="box-header">
+            <abbr title="html5"><img src="../images/html-5.png" width="100px"></abbr>
+            <abbr title="css3"><img src="../images/css-3.png" width="100px"></abbr>
+            <abbr title="javascript"><img src="../images/javascript.png" width="100px"></abbr>
+            <abbr title="c#"><img src="../images/c-sharp.png" width="100px"></abbr>
+            <abbr title="git bash"><img src="../images/git.png" width="100px"></abbr>
+            <abbr title="aseprite"><img src="../images/AsepriteIcon.png" width="100px"></abbr>
+            <abbr title="gimp"><img src="../images/gimp.png" width="100px"></abbr>
+            <abbr title="Bootstrap"><img src="../images/Bootstrap.png" width="100px"></abbr>
+        </div>
+    </header>
+
+    <div class="card-container">
+        <h2 align="center">Project</h2>
+        <div class="card-box">
+            <div class="card one"></div>
+            <div class="card two"></div>
+            <div class="card three"></div>
+            <div class="card four"></div>
+        </div>
+
+    </div>
 </body>
 </html>
