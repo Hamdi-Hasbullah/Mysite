@@ -24,17 +24,27 @@
         .gallery-container {
             position: relative;
             top: 120px;
+            width: 1000px;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 900px;
-            margin: auto;
+            -ms-flex-wrap: wrap; 
             flex-wrap: wrap;
+            padding: 0 4px;
+            margin: auto;
+
         }
 
-        .gallery-img {
+        .gallery-img, video {
             border: 1px solid aqua;
             transition: 0.3s ease;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        .column {
+            -ms-flex: 33%; /* IE 10 */
+            flex: 33%;
+            padding: 0 4px;
         }
 
         .gallery-img:hover {
@@ -60,21 +70,38 @@
         <source src="../audio/Undertale-Megalovania (128 kbps).mp3" type="audio/mp3">
     </audio>
     <div class="gallery-container">
+        <div class="column">
         <a href="../images/friend.jpg" target="_blank">
-            <img src="../images/friend.jpg" alt="friend" width="300" class="gallery-img">
-        </a>
-        <a href="../images/friend2.jpg" target="_blank">
-            <img src="../images/friend2.jpg" alt="friend" width="300" class="gallery-img">
-        </a>
+            <img src="../images/friend.jpg" alt="friend"  class="gallery-img">
+        </a>        
+        <a href="../video/chatgptshort.mp4" target="_blank">
+            <video src="../video/chatgptshort.mp4" width="300"  controls></video>
+        </a> 
         <a href="../images/friend3.jpg" target="_blank">
-            <img src="../images/friend3.jpg" alt="friend" width="300" class="gallery-img">
+            <img src="../images/friend3.jpg" alt="friend"  class="gallery-img">
         </a>
+    </div>
+    <div class="column">
         <a href="../images/seremban.jpeg" target="_blank">
-            <img src="../images/seremban.jpeg" alt="friend" width="300" class="gallery-img">
+            <img src="../images/seremban.jpeg" alt="friend"  class="gallery-img">
         </a>
         <a href="../images/pixelart.jpeg" target="_blank">
-            <img src="../images/pixelart.jpeg" alt="friend" width="300" class="gallery-img">
+            <img src="../images/pixelart.jpeg" alt="friend" class="gallery-img">
         </a>
+        <a href="../images/friend2.jpg" target="_blank">
+            <img src="../images/friend2.jpg" alt="friend"  class="gallery-img">
+        </a>
+        <a href="../video/andrewtate.mp4" target="_blank">
+            <video src="../video/andrewtate.mp4" width="300" controls></video>
+        </a>
+    </div><div class="column">
+        <a href="../video/ImamAhmadbinHanbal.mp4" target="_blank">
+            <video src="../video/ImamAhmadbinHanbal.mp4" width="300"  controls></video>
+        </a>
+        <a href="../video/imamSyafi'i.mp4" target="_blank">
+            <video src="../video/imamSyafi'i.mp4" width="300" controls></video>
+        </a>
+    </div>
     </div>
 
 </body>
